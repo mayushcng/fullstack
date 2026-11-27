@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Machine Learning Workshop</title>
-    <meta name="viewport" content="width=device-width" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusNotes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home">
+        <h1>CampusNotes</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#notices">Notices</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  </body>
+    <div class="layout">
+        <main>
+            <section>
+                <h2>Welcome to CampusNotes</h2>
+                <p>This website contains study materials and useful links for IT students.</p>
+                <figure>
+                    <img src="media/study-desk.png" alt="Books and a lamp on a study desk">
+                    <figcaption>A quiet place to study</figcaption>
+                </figure>
+            </section>
+
+            <section id="courses">
+                <h2>Courses</h2>
+                <article>
+                    <h3>Web Development</h3>
+                    <figure>
+                        <img src="media/notes.png" alt="Student taking notes beside a laptop">
+                        <figcaption>Taking notes while studying</figcaption>
+                    </figure>
+                    <p>Learn how to create and style a website using HTML and CSS.</p>
+                    <a href="https://www.w3schools.com/html/">Learn HTML</a>
+                </article>
+
+                <article>
+                    <h3>Java Programming</h3>
+                    <figure>
+                        <img src="media/reading.png" alt="Student reading a book and writing notes">
+                        <figcaption>Reading and revising class notes</figcaption>
+                    </figure>
+                    <p>Learn about variables, loops, classes and objects in Java.</p>
+                    <a href="https://www.w3schools.com/java/">Learn Java</a>
+                </article>
+            </section>
+
+            <section id="media">
+                <h2>Learning Media</h2>
+                <h3>Study Video</h3>
+                <video src="media/study.mp4" poster="media/video-thumbnail.png" controls preload="none"></video>
+                <h3>Music for Studying</h3>
+                <audio src="media/wintry.mp3" controls preload="none"></audio>
+                <p>Wintry by Matthew C. Wright (Chosic)</p>
+            </section>
+        </main>
+
+        <aside id="notices">
+            <h2>Notices</h2>
+            <p>Complete the Week 1 HTML and CSS workshop.</p>
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+                <li><a href="https://github.com/">GitHub</a></li>
+            </ul>
+            <h3>Study Tips</h3>
+            <ol>
+                <li>Revise class notes.</li>
+                <li>Practice coding daily.</li>
+                <li>Test your own code.</li>
+            </ol>
+        </aside>
+    </div>
+
+    <footer>
+        <p>CampusNotes | Week 1 Workshop</p>
+    </footer>
+</body>
 </html>

@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    background-color: #633c3c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    width: 100%;
+    max-width: 1100px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 25px;
+    flex: 1;
+    align-items: start;
+}
+
+main, aside {
+    min-width: 0;
+}
+
+h2 {
+    margin-top: 0;
+    color: #633c3c;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+aside {
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+}
+
+aside ul, aside ol {
+    padding-left: 22px;
+}
+
+aside li {
+    margin-bottom: 6px;
+}
+
+#courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 25px;
+}
+
+#courses h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+}
+
+#courses h3 {
+    margin-top: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+img, video {
+    display: block;
+    width: 480px;
+    max-width: 100%;
+}
+
+#courses img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+audio {
+    width: 300px;
+    max-width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        border-left: none;
+        border-top: 1px solid #ddd;
+        padding: 20px 0 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .layout {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    #courses {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+}
